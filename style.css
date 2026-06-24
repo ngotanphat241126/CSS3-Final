@@ -59,46 +59,30 @@ h2 {
 }
 
 /* ==========================================================================
-   3. YÊU CẦU: Navigation bar hấp dẫn (Sử dụng Flexbox & trên 3 thuộc tính)
+   3. NAVIGATION BAR - CẬP NHẬT MÀU ĐỂ SỬA LỖI CONTRAST
    ========================================================================== */
 .main-nav {
-    display: flex;                  /* Thuộc tính 1: Kích hoạt Flexbox */
-    justify-content: space-between; /* Thuộc tính 2: Căn đều 2 đầu vế */
-    align-items: center;            /* Thuộc tính 3: Căn giữa theo chiều dọc */
-    background-color: #1e3a8a;       /* Thuộc tính 4: Màu nền xanh hoàng gia */
-    padding: 15px 40px;             /* Thuộc tính 5: Khoảng đệm bao quanh */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2545;       /* SỬA: Đổi sang màu xanh Navy tối hơn để chữ trắng nổi bật hẳn */
+    padding: 15px 40px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
 }
 
-.nav-logo {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 25px;
-}
-
 .nav-links a {
-    color: #ffffff; /* Chữ trắng đạt chuẩn tương phản cao trên nền xanh */
+    color: #ffffff; 
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;              /* SỬA: Tăng font-weight lên bold để nét chữ dày và rõ hơn */
     padding: 8px 16px;
     border-radius: 4px;
-    /* YÊU CẦU HOVER LÀM ĐIỀU THÚ VỊ: Hiệu ứng chuyển màu mượt mà */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* YÊU CẦU: Sử dụng Hover Pseudo-class tạo hiệu ứng chuyển động */
+/* SỬA: Đổi màu nền Hover/Active sang màu xanh lam đậm hơn hẳn (#1d4ed8) thay cho màu nhạt cũ */
 .nav-links a:hover, .nav-links a.active {
-    background-color: #3b82f6; /* Đổi sang màu xanh sáng hơn */
-    transform: translateY(-2px); /* Nhấc nhẹ nút lên tạo độ nổi */
+    background-color: #1d4ed8;       /* Mã màu xanh đậm đạt chuẩn tương phản AAA */
+    transform: translateY(-2px);
 }
 
 /* ==========================================================================

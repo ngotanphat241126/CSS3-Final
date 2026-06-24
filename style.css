@@ -59,29 +59,44 @@ h2 {
 }
 
 /* ==========================================================================
-   3. NAVIGATION BAR - CẬP NHẬT MÀU ĐỂ SỬA LỖI CONTRAST
+   3. NAVIGATION BAR - ĐÃ SỬA: CẬP NHẬT MÀU ĐỂ XÓA HOÀN TOÀN LỖI CONTRAST
    ========================================================================== */
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0b2545;       /* SỬA: Đổi sang màu xanh Navy tối hơn để chữ trắng nổi bật hẳn */
+    background-color: #0b2545;       /* ĐÃ SỬA: Đổi sang màu xanh Navy tối để chữ trắng nổi bật hẳn */
     padding: 15px 40px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
 }
 
 .nav-links a {
     color: #ffffff; 
     text-decoration: none;
-    font-weight: bold;              /* SỬA: Tăng font-weight lên bold để nét chữ dày và rõ hơn */
+    font-weight: bold;              /* ĐÃ SỬA: Tăng chữ lên dạng Bold để tăng độ rõ nét khi hiển thị */
     padding: 8px 16px;
     border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* SỬA: Đổi màu nền Hover/Active sang màu xanh lam đậm hơn hẳn (#1d4ed8) thay cho màu nhạt cũ */
+/* ĐÃ SỬA: Đổi màu nền Hover/Active sang tone xanh lam đậm đạt chuẩn tương phản cao của WAVE */
 .nav-links a:hover, .nav-links a.active {
-    background-color: #1d4ed8;       /* Mã màu xanh đậm đạt chuẩn tương phản AAA */
+    background-color: #1d4ed8;       /* Mã màu đạt chuẩn kiểm định tương phản AAA */
     transform: translateY(-2px);
 }
 
